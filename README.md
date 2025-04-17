@@ -1,5 +1,6 @@
 # LeetCode
-A repo designated for accountability.
+A repo designated for accountability
+
 https://leetcode.com/u/jaydenmpaz/
 
 Tools / Sources used:
