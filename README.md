@@ -1,11 +1,12 @@
 # LeetCode
 A repo designated for accountability
 
-https://leetcode.com/u/jaydenmpaz/
-
 Tools / Sources used:
-LeetCode Blind 75
 
-NeetCode 150
+LeetCode Blind 75 - https://leetcode.com/problem-list/oizxjoit/
 
-AlgoMaster.io
+NeetCode 150 - https://neetcode.io/practice?tab=neetcode150
+
+AlgoMaster.io - https://algomaster.io/practice/dsa-patterns
+
+https://leetcode.com/u/jaydenmpaz
