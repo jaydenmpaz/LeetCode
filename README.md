@@ -3,7 +3,7 @@ A repo designated for accountability
 
 Templates directory contains code templates for common patterns for data structures and algorithms
 
-Solutions directory holds solutions from curated list of problems from below
+Solutions directory holds solutions and apporaches for problems from curated lists below
 
 Sources:
 
