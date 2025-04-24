@@ -1,7 +1,13 @@
 # LeetCode
 A repo designated for accountability
 
-Tools / Sources used:
+Templates directory contains code templates for common patterns for data structures and algorithms
+
+Solutions directory holds solutions and apporaches for problems from curated lists below
+
+Sources:
+
+LeetCode Interview Cheatsheet - https://leetcode.com/explore/interview/card/cheatsheets/
 
 LeetCode Blind 75 - https://leetcode.com/problem-list/oizxjoit/
 
