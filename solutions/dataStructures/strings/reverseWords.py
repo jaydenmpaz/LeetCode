@@ -12,7 +12,6 @@ class Solution:
 
     """
     STRING MANIPULATION
-
         SPLIT WORDS INTO ARRAY
         2 POINTER, ONE AT START ONE AT END
         
