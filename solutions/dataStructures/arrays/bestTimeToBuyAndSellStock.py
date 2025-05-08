@@ -1,19 +1,11 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        profit = 0
+        n = len(prices)
+        max_profit = 0
+        min_buy = prices[0]
 
-        for i in range(1, len(prices)):
-            if (prices[i] > prices[i - 1]):
-                profit += prices[i] - prices[i - 1]
-
-        return profit
-
-        """
-        Intialize profit counter
-
-        Iterate from 2nd element, to last
-        If larger price is found after, profit is there so sell immediately
-            profit = large - small
+        for i in range(1, n):
+            max_profit = max(max_profit, prices[i] - min_buy)
+            min_buy = min(min_buy, prices[i])
         
-        return profit
-        """
+        return max_profit
