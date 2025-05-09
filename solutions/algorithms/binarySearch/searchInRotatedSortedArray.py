@@ -2,29 +2,32 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left = 0
         right = len(nums) - 1
-
+         
         while left <= right:
-            mid = (left + right) // 2
+            middle = (left + right) // 2
 
-            if nums[mid] == target:
-                return mid
+            # Target is found
+            if nums[middle] == target:
+                return middle
+
+            # Check which half is sorted
+
+            # Left of middle pointer is sorted
+            elif nums[middle] >= nums[left]:
+                if nums[left] <= target < nums[middle]:
+                    right = middle - 1
+                else:
+                    left = middle + 1
             
-            # Left half is sorted
-            elif nums[mid] >= nums[left]:
-                if nums[left] <= target <= nums[mid]:
-                    right = mid - 1
-                else:
-                    left = mid + 1
-
-            # Right half is sorted
+            # Right of middle pointer is sorted
             else:
-                if nums[mid] <= target <= nums[right]:
-                    left = mid + 1
+                if nums[middle] < target <= nums[right]:
+                    left = middle + 1
                 else:
-                    right = mid - 1
+                    right = middle - 1
 
-        
         return - 1
+
 
         """
         Searches for a target value in a rotated sorted array using binary search.
