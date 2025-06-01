@@ -26,7 +26,5 @@ class Solution {
         BFS(grid, r - 1, c, rows, cols);
         BFS(grid, r, c + 1, rows, cols);
         BFS(grid, r, c - 1, rows, cols);
-
-
     }
 } 
