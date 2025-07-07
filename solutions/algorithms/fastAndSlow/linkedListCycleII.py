@@ -6,21 +6,24 @@
 
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
-        slow = fast = head
+        slow = head
+        fast = head
 
+        # Cycle Detection Algorithm
+        # If the linked list ends, loop terminates
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-
+            
+            # If the pointers meet, cycle is detected
             if slow == fast:
-                break
-        else: return None
+                # To find the tail, we set slow to head and loop,
+                # moving pointers by one node until slow and fast are equal again
+                slow = head
+                while slow != fast:
+                    slow = slow.next
+                    fast = fast.next
+                return slow
 
-        fast = head
-
-        while fast != slow:
-            fast = fast.next
-            slow = slow.next
-
-        return slow
+        # Return None if no cycle is detected
+        return None
