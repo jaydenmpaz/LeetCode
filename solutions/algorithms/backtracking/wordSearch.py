@@ -12,7 +12,7 @@ class Solution:
         
         return False
 
-    
+
     def searchWord(self, board, word, visited, index, i, j):
         # Word has been found
         if (index == len(word)):
